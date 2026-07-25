@@ -14,3 +14,10 @@ else if(
 else{
     console.log("player2 is win");
 }
+// //using ternary operator
+// console.log(
+//     (player1 === player2) ? "its a tie" :
+//         (player1 === 'paper' && player2 === 'rock' ||
+//             player1 === 'rock' && player2 === 'scissors' ||
+//             player1 === 'scissors' && player2 === 'paper') ? "player1 is win" : "player2 is win"
+// );
