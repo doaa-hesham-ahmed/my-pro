@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD SYSTEM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body">
+
+   <div class="container py-5">
+
+    <div class="card shadow p-4">
+
+        <h2 class="text-center mb-4">CRUD SYSTEM</h2>
+
+        <input id="productName" type="text" class="form-control mb-3" placeholder="Product Name">
+
+        <input id="productPrice" type="number" class="form-control mb-3" placeholder="Product Price">
+
+        <input id="productCategory" type="text" class="form-control mb-3" placeholder="Product Category">
+
+        <textarea id="productDescription" class="form-control mb-3" rows="3"
+            placeholder="Product Description"></textarea>
+
+        <div class="text-center">
+            <button id="addBtn" class="btn btn-primary px-4">
+                Add Product
+            </button>
+
+            <button id="updateBtn" class="btn btn-warning px-4 d-none">
+                Update Product
+            </button>
+        </div>
+
+    </div>
+
+    <input id="searchInput"
+        class="form-control my-4"
+        placeholder="Search By Name">
+
+    <table class="table table-bordered table-hover text-center">
+
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
