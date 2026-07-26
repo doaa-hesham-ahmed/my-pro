@@ -1,0 +1,30 @@
+a{
+    color:brown;
+    padding: 7px;
+    text-decoration: none;
+
+}
+
+h1{
+    color: brown;
+}
+
+h1.heading{
+    color: aqua;
+}
+legend.legend1{
+    color:rgb(62, 62, 134);
+}
+legend.legend2{
+    color:rgb(122, 122, 208);
+}
+#input1{
+
+padding: 5px;
+border-radius: 10px;
+}
+#input1:hover{
+    padding: 3px 10px;
+    background-color: rgb(66, 154, 154);
+color: white;
+}

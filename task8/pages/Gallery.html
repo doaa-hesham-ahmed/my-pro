@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/tasks/task8/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS -->
+      <link rel="stylesheet" href="/tasks/task8/css/style.css">
+
+    <title>Bakery</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-home fixed-top">
+    <div class="container">
+
+         <a class="navbar-brand fs-2 fw-bold" href="#">
+             <i class="fa-solid fa-bread-slice"></i>
+             Bakery
+         </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/tasks/task8/pages/home.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/OurOfer.html">Our Offer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/Gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button"
+        data-bs-toggle="dropdown">
+
+        Blog
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/tasks/task8/pages/Blog.html">
+             Blog Index
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/SimplePost.html">
+             Simple Post
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/GalleryPost.html">
+             Gallery Post
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/BasicPost.html">
+             Basic Post
+        </a></li>
+    </ul>
+</li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/Contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<section class="about">
+
+    <div class="overlay">
+        <div class="content1 text-center text-white">
+
+            <h1 class="display-1 fw-bold">
+                Gallery
+            </h1>
+           <p>Awesome gallery showcasing our artisan bakings.</p>
+
+        </div>
+    </div>
+
+</section>
+
+<div class="bakery-gallery">
+  
+  <!-- Image 1 -->
+  <div class="gallery-item">
+    <input type="checkbox" id="img1" class="modal-toggle">
+    <label for="img1"><img src="/tasks/task8/media/hh4.jpg" alt="Bakery Item 1"></label>
+    <div class="full-screen-modal">
+      <label for="img1" class="close-overlay"></label>
+      <img src="/tasks/task8/media/hh4.jpg" class="modal-content">
+    </div>
+  </div>
+
+  <!-- Image 2 -->
+  <div class="gallery-item">
+    <input type="checkbox" id="img2" class="modal-toggle">
+    <label for="img2"><img src="/tasks/task8/media/hh2.jpg" alt="Bakery Item 2"></label>
+    <div class="full-screen-modal">
+      <label for="img2" class="close-overlay"></label>
+      <img src="/tasks/task8/media/hh2.jpg" class="modal-content">
+    </div>
+  </div>
+
+  <!-- Image 3 -->
+  <div class="gallery-item">
+    <input type="checkbox" id="img3" class="modal-toggle">
+    <label for="img3"><img src="/tasks/task8/media/hh3.jpg" alt="Bakery Item 3"></label>
+    <div class="full-screen-modal">
+      <label for="img3" class="close-overlay"></label>
+      <img src="/tasks/task8/media/hh3.jpg" class="modal-content">
+    </div>
+  </div>
+
+  <!-- Image 4 -->
+  <div class="gallery-item">
+    <input type="checkbox" id="img4" class="modal-toggle">
+    <label for="img4"><img src="/tasks/task8/media/hh1.jpg" alt="Bakery Item 4"></label>
+    <div class="full-screen-modal">
+      <label for="img4" class="close-overlay"></label>
+      <img src="/tasks/task8/media/hh1.jpg" class="modal-content">
+    </div>
+  </div>
+
+  <!-- Image 5 -->
+  <div class="gallery-item">
+    <input type="checkbox" id="img5" class="modal-toggle">
+    <label for="img5"><img src="/tasks/task8/media/hh4.jpg" alt="Bakery Item 5"></label>
+    <div class="full-screen-modal">
+      <label for="img5" class="close-overlay"></label>
+      <img src="/tasks/task8/media/hh4.jpg" class="modal-content">
+    </div>
+  </div>
+
+  <!-- Image 6 -->
+  <div class="gallery-item">
+    <input type="checkbox" id="img6" class="modal-toggle">
+    <label for="img6"><img src="/tasks/task8/media/hh66.jpg" alt="Bakery Item 6"></label>
+    <div class="full-screen-modal">
+      <label for="img6" class="close-overlay"></label>
+      <img src="/tasks/task8/media/hh66.jpg" class="modal-content">
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Column 1: About Us -->
+    <div class="footer-column">
+      <h4>About us</h4>
+      <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
+ <br><br>
+We are the champions! We are the most amazing theme of all time, yeah.</p>
+    </div>
+
+    <!-- Column 2: Why we are special -->
+    <div class="footer-column">
+      <h4>Why we are special?</h4>
+      <ul>
+        <li>> Our magical recipe.</li>
+        <hr>
+        <li>> We care about environment.</li>
+        <hr>
+        <li>> We are trusted by hundreds of clients.</li>
+        <hr>
+        <li>> Social media loves us!</li>
+        <hr>
+        <li>> This list is super easy to create.</li>
+        
+      </ul>
+    </div>
+
+    <!-- Column 3: Opening Hours -->
+    <div class="footer-column">
+      <h4>Opening Hours</h4>
+      <ul>
+        <li>> Monday 10AM - 9PM</li>
+        <hr>
+        <li>> Tuesday  10AM - 9PM</li>
+        <hr>
+        <li>> Wednesday  10AM - 9PM</li>
+        <hr>
+        <li>> Thursday  10AM - 9PM</li>
+        <hr>
+        <li>> Friday 10AM - 9PM</li>
+        
+        <li>> Weekends  10AM - 9PM</li>
+        
+      </ul>
+    </div>
+
+   <div class="footer-column">
+  <h4>Contact Details</h4>
+  <p><i class="fas fa-map-marker-alt"></i> Manchester Road 123-78B, Silictown, 7854MD, Great Country</p>
+  <hr>
+  <p><i class="fas fa-phone"></i> +46 123 456 789</p>
+  <hr>
+  <p><i class="fas fa-envelope"></i> hello@sitename.com</p>
+  <hr>
+  <p><i class="fas fa-globe"></i> http://www.sitename.com</p>
+</div>
+  </div>
+  <!-- Bottom Bar: Logo and Icons -->
+  <div class="footer-bottom">
+   <a class="navbar-brand fs-1 fw-bold" href="#">
+             <i class="fa-solid fa-bread-slice"></i>
+             Bakery
+         </a>
+
+    <p>Copyright 2017. All rights reserved.</p>
+    <div class="social-icons">
+      <!-- These use the hover effect discussed previously -->
+      <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="icon-link" id="gogl"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="/tasks/task8/js/bootstrap.bundle.min.js"></script>
+<script src="/tasks/task8/js/main.js"></script>
+
+</body>
+</html>

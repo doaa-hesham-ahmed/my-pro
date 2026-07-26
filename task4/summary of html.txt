@@ -1,0 +1,242 @@
+
+HTML (HyperText Markup Language)
+
+
+What is HTML?
+
+HTML stands for HyperText Markup Language. It is the standard language used to
+create web pages. HTML provides the structure of a webpage by organizing
+content such as headings, paragraphs, images,links, tables, forms, and videos.
+
+
+Benefits of HTML
+
+-Easy to learn and use.
+
+-Supported by all web browsers.
+
+-Forms the basic structure of every website.
+
+-Works together with CSS for styling and JavaScript for interactivity.
+
+-Helps create accessible and search-engine-friendly web pages.
+
+-Free and open standard maintained by the W3C.
+
+
+Explanation
+
+<!DOCTYPE html> : Declares that the document is an HTML5 document.
+
+<html> : The root element that contains all HTML elements.
+
+lang="en" : Specifies that the page language is English.
+
+<head> : Contains information about the page that is not displayed to users.
+
+<meta charset="UTF-8"> : Supports all characters and symbols, including Arabic.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> : Makes the webpage responsive on different screen sizes.
+
+<title> : Sets the page title shown in the browser tab.
+
+<body> : Contains all visible content such as text, images, links, tables, forms, and videos.
+
+
+Important HTML Tags
+
+Document Tags
+
+<html> : Root element of the webpage.
+
+<head> : Contains page information.
+
+<title> : Sets the page title.
+
+<body> : Contains the visible content.
+
+Text Tags
+
+<h1> to <h6> : Headings.
+
+<p> : Paragraph.
+
+<br> : Line break.
+
+<hr> : Horizontal line.
+
+<strong> : Important bold text.
+
+<b> : Bold text.
+
+<em> : Emphasized (italic).
+
+<i> : Italic text.
+
+<mark> : Highlighted text.
+
+<small> : Smaller text.
+
+<sup> : Displays superscript text. Example: x2.
+
+<sub> : Displays subscript text. Example: H2O.
+
+<pre> : Displays preformatted text.
+
+<blockquote> : Displays a long quotation.
+
+<q> : Displays a short quotation.
+
+<del> : Represents deleted text.
+
+Links and Images
+
+<a> : Hyperlink.
+
+<img> : Image.
+
+
+Lists
+
+<ul> : Unordered list.
+
+<ol> : Ordered list.
+
+<li> : List item.
+
+<dl> : Description list.
+
+<dt> : Description title.
+
+<dd> : Description details.
+
+
+Tables
+
+<table> : Table.
+
+<caption> : Table title.
+
+<thead> : Groups the table header rows.
+
+<tbody> : Groups the table body rows.
+
+<tfoot> : Groups the table footer rows.
+
+<tr> : Table row.
+
+<th> : Table header.
+
+<td> : Table data.
+
+<colgroup> : Groups table columns.
+
+
+Forms
+
+<form> : Form container.
+
+<input> : Input field.
+
+<label> : Label.
+
+<textarea> : Multi-line input.
+
+<select> : Drop-down list.
+
+<optgroup> : Groups related options.
+
+<option> : Option in select.
+
+<datalist> : Provides predefined options for an input.
+
+<button> : Button.
+
+<fieldset> : Groups form elements.
+
+<legend> : Title for fieldset.
+
+<progress> : Displays task progress.
+
+Semantic Elements
+
+<header> : Page header.
+
+<nav> : Navigation menu.
+
+<main> : Main content.
+
+<section> : Section.
+
+<article> : Independent content.
+
+<aside> : Sidebar.
+
+<figure> : Self-contained content.
+
+<figcaption> : Caption for a figure.
+
+<details> : Expandable content.
+
+<time> : Represents a date or time.
+
+<address> : Contact information.
+
+<footer> : Page footer.
+
+
+Multimedia
+
+<audio> : Audio.
+
+<video> : Video.
+
+<iframe> : Embeds another webpage.
+
+
+Layout Elements
+
+<div> : Block container.
+
+<span> : Inline container.
+
+
+Metadata Tags
+
+<meta> : Defines metadata.
+
+<link> : Links external resources such as CSS files.
+
+<style> : Contains internal CSS.
+
+<script> : Contains or links JavaScript code.
+
+
+Common HTML Attributes
+
+id : Unique identifier.
+
+class : Group elements for CSS/JavaScript.
+
+style : Inline CSS.
+
+href : Link destination.
+
+src : Image or media source.
+
+alt : Alternative text for images.
+
+width : Width.
+
+height : Height.
+
+title : Tooltip text.
+
+target="_blank" : Opens the link in a new tab.
+
+placeholder : Hint inside an input.
+
+value : Default value.
+
+required : Makes a field mandatory.
+
