@@ -1,0 +1,141 @@
+
+:root{
+
+    --primary-color:#6c5ce7;
+    --secondary-color:#00b894;
+    --text-color:#333;
+    --card-color:white;
+
+}
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    color:var(--text-color);
+    min-height:100vh;
+    background-color:#eee;
+    /* background-image:url("../images/dev.jpg"); */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+#header{
+    height:20vh;
+    background:linear-gradient(135deg,#6c5ce7,#00b894);
+    color:white;
+    text-align:center;
+    padding:3rem;
+}
+.profile-card{
+    width:70%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+.profile-image{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid var(--primary-color);
+}
+.profile-info{
+    font-size:1.2em;
+}
+.profile-info p{
+    margin-top:15px;
+    line-height:1.7;
+}
+.skills-section{
+
+    width:70%;
+    margin:40px auto;
+    padding:30px;
+    border-radius:20px;
+    align-items:center;
+}
+.skills-section > ul{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+}
+.skills-section li{
+    background:var(--primary-color);
+    color:white;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:grab;
+}
+#about{
+    width:70%;
+    margin:auto;
+    padding:30px;
+    background:white;
+}
+
+p{
+    color:#555;
+}
+.profile-info p{
+    color:#444;
+}
+#about p{
+    color:purple;
+}
+.contact-button{
+    --button-color:#e17055;
+    display:block;
+    width:200px;
+    margin:40px auto;
+    padding:15px;
+    text-align:center;
+    background:var(--button-color);
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    text-decoration:none;
+}
+.contact-button:hover{
+
+    background:#d63031;
+}
+.skills-section li:hover{
+    background:var(--secondary-color);
+}
+.content-box{
+    width:50%;
+    height:150px;
+    margin:40px auto;
+    padding:20px;
+    background:white;
+    overflow:auto;
+}
+.contact-button{
+    cursor:pointer;
+}
+.content-box{
+    cursor:help;
+}
+.profile-card{
+    cursor:grab;
+}
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    width:100%;
+}
+footer p{
+    color:white !important;
+}

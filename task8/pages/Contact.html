@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/tasks/task8/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS -->
+      <link rel="stylesheet" href="/tasks/task8/css/style.css">
+
+    <title>Bakery</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-home fixed-top">
+    <div class="container">
+
+         <a class="navbar-brand fs-2 fw-bold" href="#">
+             <i class="fa-solid fa-bread-slice"></i>
+             Bakery
+         </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/tasks/task8/pages/home.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/OurOfer.html">Our Offer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/Gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button"
+        data-bs-toggle="dropdown">
+
+        Blog
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/tasks/task8/pages/Blog.html">
+             Blog Index
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/SimplePost.html">
+             Simple Post
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/GalleryPost.html">
+             Gallery Post
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/BasicPost.html">
+             Basic Post
+        </a></li>
+    </ul>
+</li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/Contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<section class="about">
+
+    <div class="overlay">
+        <div class="content1 text-center text-white">
+
+            <h1 class="display-1 fw-bold">
+                Contact
+            </h1>
+          
+            <a href="/tasks/task8/pages/home.html" style="color: white;">home</a>
+
+           <span>/ Our Offe</span> 
+
+        </div>
+    </div>
+
+</section>
+
+<section class="containerr">
+  <div class="row m-5 " >
+    <!-- Left Column: Contact Form -->
+    <div class="col-md-6">
+      <h3>Contact Form</h3>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Subject">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="8" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary" style="background-color: rgb(219, 122, 3);">Send</button>
+      </form>
+    </div>
+
+    <!-- Right Column: Contact Information -->
+    <div class="col-md-6">
+      <h3>Contact Information</h3>
+      <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p><strong>Our contact details:</strong></p>
+      
+      <ul class="list-unstyled">
+        <li class="mb-2"><i class="bi bi-geo-alt" style="background-color: rgb(219, 122, 3); color: white !important;"></i> Manchester St 123-78B, Random 7D, UK</li>
+        <li class="mb-2"><i class="bi bi-telephone" style="background-color: rgb(219, 122, 3); color: white !important;"></i> +46 123 456 789</li>
+        <li class="mb-2"><i class="bi bi-headset" style="background-color: rgb(219, 122, 3); color: white !important;"></i> +37 431 456 789</li>
+        <li class="mb-2"><i class="bi bi-envelope" style="background-color: rgb(219, 122, 3); color: white !important;"></i> hello@sitename.com</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="map-section my-2">
+  <div class="map-container">
+    <!-- Replace the src URL with your desired location from Google Maps -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.428330752119!2d-74.00405238459424!3d40.71832047933096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1730623f99%3A0x6b45016140410065!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+      width="100%" 
+      height="500" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Column 1: About Us -->
+    <div class="footer-column">
+      <h4>About us</h4>
+      <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
+ <br><br>
+We are the champions! We are the most amazing theme of all time, yeah.</p>
+    </div>
+
+    <!-- Column 2: Why we are special -->
+    <div class="footer-column">
+      <h4>Why we are special?</h4>
+      <ul>
+        <li>> Our magical recipe.</li>
+        <hr>
+        <li>> We care about environment.</li>
+        <hr>
+        <li>> We are trusted by hundreds of clients.</li>
+        <hr>
+        <li>> Social media loves us!</li>
+        <hr>
+        <li>> This list is super easy to create.</li>
+        
+      </ul>
+    </div>
+
+    <!-- Column 3: Opening Hours -->
+    <div class="footer-column">
+      <h4>Opening Hours</h4>
+      <ul>
+        <li>> Monday 10AM - 9PM</li>
+        <hr>
+        <li>> Tuesday  10AM - 9PM</li>
+        <hr>
+        <li>> Wednesday  10AM - 9PM</li>
+        <hr>
+        <li>> Thursday  10AM - 9PM</li>
+        <hr>
+        <li>> Friday 10AM - 9PM</li>
+        
+        <li>> Weekends  10AM - 9PM</li>
+        
+      </ul>
+    </div>
+
+   <div class="footer-column">
+  <h4>Contact Details</h4>
+  <p><i class="fas fa-map-marker-alt"></i> Manchester Road 123-78B, Silictown, 7854MD, Great Country</p>
+  <hr>
+  <p><i class="fas fa-phone"></i> +46 123 456 789</p>
+  <hr>
+  <p><i class="fas fa-envelope"></i> hello@sitename.com</p>
+  <hr>
+  <p><i class="fas fa-globe"></i> http://www.sitename.com</p>
+</div>
+  </div>
+  <!-- Bottom Bar: Logo and Icons -->
+  <div class="footer-bottom">
+   <a class="navbar-brand fs-1 fw-bold" href="#">
+             <i class="fa-solid fa-bread-slice"></i>
+             Bakery
+         </a>
+
+    <p>Copyright 2017. All rights reserved.</p>
+    <div class="social-icons">
+      <!-- These use the hover effect discussed previously -->
+      <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="icon-link" id="gogl"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="/tasks/task8/js/bootstrap.bundle.min.js"></script>
+<script src="/tasks/task8/js/main.js"></script>
+
+</body>
+</html>

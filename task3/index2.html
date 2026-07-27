@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio HTML Project">
+    <title>Doaa Hesham | Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>Doaa Portfolio</h2>
+
+        <nav>
+            <a href="#about">About</a>&nbsp;|
+            <a href="#skills">Skills</a>&nbsp;|
+            <a href="#courses">Courses</a>&nbsp;|
+            <a href="#gallery">Gallery</a>&nbsp;|
+            <a href="#contact">Contact</a>&nbsp;|
+            <a href="#faq">FAQ</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <!-- Hero / About -->
+       <section id="about">
+    <h1>Welcome To My Portfolio</h1>
+
+    <table cellpadding="20">
+        <tr>
+            <td>
+                <img src="hcj.jpg"
+                     alt="Profile picture of Doaa Hesham"
+                     width="400">
+            </td>
+
+            <td>
+                <p>
+                    Hello! My name is <strong>Doaa Hesham</strong>.
+                    I am a <em>Computer Science Student</em> who loves
+                    <mark>Web Development</mark>.
+                    <br><br>
+                    I enjoy learning new technologies and building web applications.
+                    I am currently learning HTML, CSS, JavaScript, React, and Node.js.
+                    My goal is to become a professional Full-Stack Web Developer.
+                </p>
+            </td>
+        </tr>
+    </table>
+</section>
+
+        <hr>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <h3>Technical Skills</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+            </ul>
+
+            <h3>Learning Journey</h3>
+
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+                <li>Learn React</li>
+                <li>Learn Node.js</li>
+            </ol>
+
+            <p>
+                I am <strong>passionate</strong> about programming,
+                always <em>improving</em> my skills,
+                and <mark>never stop learning</mark>.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Courses -->
+        <section id="courses">
+            <h2>My Courses</h2>
+
+            <table border="1">
+                <caption>Completed & Current Courses</caption>
+
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>2 Weeks</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>3 Weeks</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript</td>
+                        <td rowspan="2">1 Month</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>React</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Courses: 4</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Gallery -->
+        
+        <section id="gallery">
+    <h2>Gallery</h2>
+
+    <table>
+        <tr>
+            <td>
+                <figure>
+                    <img src="hcj.jpg"
+                         alt="HTML Project Screenshot"
+                         width="250">
+                    <figcaption>HTML Project</figcaption>
+                </figure>
+            </td>
+
+            <td>
+                <figure>
+                    <img src="hcj.jpg"
+                         alt="CSS Project Screenshot"
+                         width="250">
+                    <figcaption>CSS Project</figcaption>
+                </figure>
+            </td>
+
+            <td>
+                <figure>
+                    <img src="hcj.jpg"
+                         alt="React Project Screenshot"
+                         width="250">
+                    <figcaption>js Project</figcaption>
+                </figure>
+            </td>
+             <td>
+                <figure>
+                    <img src="hcj.jpg"
+                         alt="React Project Screenshot"
+                         width="250">
+                    <figcaption>React Project</figcaption>
+                </figure>
+            </td>
+        </tr>
+    </table>
+</section>
+
+        <hr>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#">
+
+                <p>
+                    <label for="name">Full Name:</label><br>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label><br>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="01XXXXXXXXX">
+                </p>
+
+                <p>
+                    <label for="birthdate">Birth Date:</label><br>
+                    <input
+                        type="date"
+                        id="birthdate"
+                        name="birthdate">
+                </p>
+
+                <p>
+                    <label for="subject">Subject:</label><br>
+
+                    <select id="subject" name="subject">
+                        <option>General Question</option>
+                        <option>Job Opportunity</option>
+                        <option>Project</option>
+                        <option>Training</option>
+                    </select>
+                </p>
+
+                <p>
+                    Preferred Contact Method
+                </p>
+
+                <input
+                    type="radio"
+                    id="emailContact"
+                    name="contactMethod">
+
+                <label for="emailContact">Email</label>
+
+                <input
+                    type="radio"
+                    id="phoneContact"
+                    name="contactMethod">
+
+                <label for="phoneContact">Phone</label>
+
+                <p>
+                    <label for="message">Message:</label><br>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        placeholder="Write your message here..."
+                        required></textarea>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="agree"
+                        name="agree"
+                        required>
+
+                    <label for="agree">
+                        I agree to the terms and conditions.
+                    </label>
+                </p>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>Who are you?</summary>
+                <p>I am a Computer Science student interested in Web Development.</p>
+            </details>
+
+            <details>
+                <summary>What technologies do you use?</summary>
+                <p>I use HTML, CSS, JavaScript, React, and Node.js.</p>
+            </details>
+
+            <details>
+                <summary>Can I contact you?</summary>
+                <p>Yes, you can use the contact form above.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <address>
+            Email: doaahesham452@gmail.com
+            <br>
+            Cairo, Egypt
+        </address>
+
+        <p>&copy; 2026 Doaa Hesham. All Rights Reserved.</p>
+
+        <p>
+            <a href="https://github.com/doaahasham" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/doaa-hesham-448459320/" target="_blank">LinkedIn</a> |
+            <a href="#about">Back to Top</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

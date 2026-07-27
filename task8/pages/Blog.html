@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/tasks/task8/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS -->
+      <link rel="stylesheet" href="/tasks/task8/css/style.css">
+
+    <title>Bakery</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-home fixed-top">
+    <div class="container">
+
+         <a class="navbar-brand fs-2 fw-bold" href="#">
+             <i class="fa-solid fa-bread-slice"></i>
+             Bakery
+         </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/tasks/task8/pages/home.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/OurOfer.html">Our Offer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/Gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button"
+        data-bs-toggle="dropdown">
+
+        Blog
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/tasks/task8/pages/Blog.html">
+             Blog Index
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/SimplePost.html">
+             Simple Post
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/GalleryPost.html">
+             Gallery Post
+        </a></li>
+
+        <li><a class="dropdown-item" href="/tasks/task8/pages/BasicPost.html">
+             Basic Post
+        </a></li>
+    </ul>
+</li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/tasks/task8/pages/Contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<section class="Blog ">
+  <!-- Top header row -->
+  <div class="row mb-4">
+    <div class="cont col-12 d-flex justify-content-between align-items-center">
+      <h2 class="h1">Blog</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent p-0">
+          <li class="breadcrumb-item"><a href="/tasks/task8/pages/home.html" class="text-dark">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Content Row: Grid + Sidebar -->
+  <div class="contblog row">
+    <!-- Left Column: Blog Grid -->
+    <div class="col-lg-8">
+      <div class="row">
+        <!-- Post 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="/tasks/task8/media/hh4.jpg" class="card-img-top" alt="Bakery Item">
+            <div class="card-body">
+              <h5 class="card-title">Simple Post</h5>
+              <p class="text-muted small">By Philip on April 11, 2017</p>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text...</p>
+              <a href="#" class="text-dark text-decoration-none">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="/tasks/task8/media/hh2.jpg" class="card-img-top" alt="Bakery Item">
+            <div class="card-body">
+              <h5 class="card-title">Gallery Post</h5>
+              <p class="text-muted small">By Philip on April 11, 2017</p>
+              <p class="card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate...</p>
+              <a href="#" class="text-dark text-decoration-none">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- Post 3 -->
+         <a href="/tasks/task8/pages/BasicPost.html" style="text-decoration: none;"></a>
+        <div class="col-md-6 mb-4">
+            
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Basic Post</h5>
+              <p class="text-muted small">By Philip on April 11, 2017</p>
+              <p class="card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate...</p>
+              <a href="#" class="text-dark text-decoration-none">Read more &rarr;</a>
+            </div>
+          </div>
+          
+        </div>
+        </a>
+        <!-- Post 4 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100 border-0 shadow-sm bg-brown text-white">
+            <div class="card-body" style="background-color: rgb(140, 79, 4);>
+              <p class="card-text">Two things are infinite: the universe and human stupidity, and I'm not sure about the universe."</p>
+              <p class="small">- Albert Einstein</p>
+              
+            </div>
+           
+            <div>
+                 <h6 class="mt-4">Quote Post</h6>
+                <p class="text-muted small">By Philip on April 11, 2017</p>
+              <p class="card-text">Duis autem vel eum iriure dolor in hendrerit in vulputate...</p>
+              <a href="#" class="text-dark text-decoration-none">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Sidebar -->
+    <aside class="col-lg-4">
+      <div class="input-group mb-5">
+        <input type="text" class="form-control" placeholder="Search...">
+      </div>
+      <h5 class="mb-3">Recent Posts</h5>
+      <ul class="list-unstyled mb-5">
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> Simple Post</a></li>
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> Gallery Post</a></li>
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> Basic Post</a></li>
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> Quote Post</a></li>
+      </ul>
+      <hr>
+      <h5 class="mb-3">Recent Comments</h5>
+      <ul class="list-unstyled mb-5">
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> Phil on Simple Post</a></li>
+      </ul>
+      <hr>
+      <h5 class="mb-3">Archives</h5>
+      <ul class="list-unstyled mb-5">
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> April 2017</a></li>
+      </ul>
+      <hr>
+      <h5 class="mb-3">Categories</h5>
+      <ul class="list-unstyled mb-5">
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> Classic</a></li>
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> Photography</a></li>
+        <li class="mb-2"><a href="#" class="text-dark text-decoration-none">> Travel</a></li>
+      </ul>
+      <hr>
+      <h5 class="mb-3">Meta</h5>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-dark text-decoration-none">> Login</a></li>
+       <br>
+        <li><a href="#" class="text-dark text-decoration-none">> Entries RSS</a></li>
+         <br>
+        <li><a href="#" class="text-dark text-decoration-none">> Comments RSS</a></li>
+         <br>
+        <li><a href="#" class="text-dark text-decoration-none">> WordPress.org</a></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Column 1: About Us -->
+    <div class="footer-column">
+      <h4>About us</h4>
+      <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
+ <br><br>
+We are the champions! We are the most amazing theme of all time, yeah.</p>
+    </div>
+
+    <!-- Column 2: Why we are special -->
+    <div class="footer-column">
+      <h4>Why we are special?</h4>
+      <ul>
+        <li>> Our magical recipe.</li>
+        <hr>
+        <li>> We care about environment.</li>
+        <hr>
+        <li>> We are trusted by hundreds of clients.</li>
+        <hr>
+        <li>> Social media loves us!</li>
+        <hr>
+        <li>> This list is super easy to create.</li>
+        
+      </ul>
+    </div>
+
+    <!-- Column 3: Opening Hours -->
+    <div class="footer-column">
+      <h4>Opening Hours</h4>
+      <ul>
+        <li>> Monday 10AM - 9PM</li>
+        <hr>
+        <li>> Tuesday  10AM - 9PM</li>
+        <hr>
+        <li>> Wednesday  10AM - 9PM</li>
+        <hr>
+        <li>> Thursday  10AM - 9PM</li>
+        <hr>
+        <li>> Friday 10AM - 9PM</li>
+        
+        <li>> Weekends  10AM - 9PM</li>
+        
+      </ul>
+    </div>
+
+   <div class="footer-column">
+  <h4>Contact Details</h4>
+  <p><i class="fas fa-map-marker-alt"></i> Manchester Road 123-78B, Silictown, 7854MD, Great Country</p>
+  <hr>
+  <p><i class="fas fa-phone"></i> +46 123 456 789</p>
+  <hr>
+  <p><i class="fas fa-envelope"></i> hello@sitename.com</p>
+  <hr>
+  <p><i class="fas fa-globe"></i> http://www.sitename.com</p>
+</div>
+  </div>
+  <!-- Bottom Bar: Logo and Icons -->
+  <div class="footer-bottom">
+   <a class="navbar-brand fs-1 fw-bold" href="#">
+             <i class="fa-solid fa-bread-slice"></i>
+             Bakery
+         </a>
+
+    <p>Copyright 2017. All rights reserved.</p>
+    <div class="social-icons">
+      <!-- These use the hover effect discussed previously -->
+      <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="icon-link" id="gogl"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+<script src="/tasks/task8/js/bootstrap.bundle.min.js"></script>
+<script src="/tasks/task8/js/main.js"></script>
+
+</body>
+</html>
