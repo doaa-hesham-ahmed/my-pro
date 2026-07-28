@@ -1,7 +1,10 @@
+import Parent from "../Parent/Parent";
 import HomeStyle from "./About.module.css";
 export default function About(){
 
   return (
+
+    
     <div className="d-flex justify-content-evenly">
      <div className="card" style={{width: '18rem'}}>
   <img src="..." className="card-img-top" alt="..." />
