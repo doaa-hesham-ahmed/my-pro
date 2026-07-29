@@ -1,18 +1,28 @@
-Recipe App
-A modern recipe application built with React and Bootstrap.  
+ Recipe App
 
-Technologies Used
+A modern Recipe Application built with React that allows users to search recipes, view details, add recipes, and contact the website.
 
- React.js
- JavaScript (ES6+)
- Bootstrap 5
- CSS Modules
- React Router
- Vite
- Forkify API
+ Features
 
-Features
- Login and Register UI
- Display recipes in Bootstrap cards
- etch recipes from API
- counter using Bootstrap button 
+  Search recipes using Forkify API
+  Display recipes as cards
+  View recipe details
+  Register and Login system using Local Storage
+  Contact Us page
+  Dark Mode
+  Loading spinner
+  Responsive design
+
+
+ Technologies
+
+  React JS
+  React Router DOM
+  Axios
+  Bootstrap
+  CSS Modules
+  React Icons
+  Local Storage
+  Forkify API
+
+
