@@ -1,0 +1,48 @@
+body {
+  transition: 0.3s;
+}
+
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+
+.dark-mode .navbar {
+  background-color: #212529 !important;
+}
+
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+  color: white !important;
+}
+
+
+.dark-mode .form-control {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+
+
+.dark-mode .form-control::placeholder {
+  color: #aaa;
+}
+body.dark-mode .card {
+  --bs-card-bg: white !important;
+  --bs-card-color: black !important;
+  background-color: white !important;
+  color: black !important;
+}
+
+body.dark-mode .card-body {
+  background-color: white !important;
+}

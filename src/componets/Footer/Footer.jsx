@@ -1,62 +1,130 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt
+} from "react-icons/fa";
+
+import FooterStyle from "./Footer.module.css";
+import ContactUs from './../ContactUs/ContactUs';
+
+
 export default function Footer() {
+
   return (
-   <footer className="bg-dark text-white mt-5 py-4">
+
+    <footer className={FooterStyle.footer}>
+
       <div className="container">
 
-        <div className="row">
+        <div className="row gy-4">
 
-          
+
+          {/* About */}
           <div className="col-md-4">
-            <h5>My Website</h5>
+
+            <h4>
+              🍴 Recipe App
+            </h4>
+
             <p>
-              Build modern websites using React and Bootstrap.
+              Discover delicious recipes and cook your favorite meals
+              easily with our recipe collection.
             </p>
+
+
           </div>
-          <div className="col-md-4">
-            <h5>Quick Links</h5>
 
-            <ul className="list-unstyled">
+
+
+
+          <div className="col-md-4"> <h4>  Quick Links</h4>
+
+
+            <ul>
+
               <li>
-                <a href="/" className="text-white text-decoration-none">
+                <Link to="/">
                   Home
-                </a>
+                </Link>
               </li>
 
+
               <li>
-                <a href="/about" className="text-white text-decoration-none">
+                <Link to="/about">
                   About
-                </a>
+                </Link>
               </li>
 
+
               <li>
-                <a href="/login" className="text-white text-decoration-none">
+                <Link to="/login">
                   Login
-                </a>
+                </Link>
+              </li>
+
+
+              <li>
+                <Link to="/register">
+                  Register
+                </Link>
               </li>
 
               <li>
-                <a href="/register" className="text-white text-decoration-none">
-                  Register
-                </a>
+                <Link to="/contact">
+                  ContactUs
+                </Link>
               </li>
+
             </ul>
 
+
           </div>
 
           <div className="col-md-4">
 
-            <h5>Contact</h5>
+
+            <h4>
+              Contact Us
+            </h4>
+
 
             <p>
-              Email: example@gmail.com
+              <FaEnvelope />
+              example@gmail.com
             </p>
 
+
             <p>
-              Phone: +20 123 456 789
+              <FaPhone />
+              +20 123 456 789
             </p>
+
+
+            <p>
+              <FaMapMarkerAlt />
+              Egypt
+            </p>
+
+
+
+            <div className={FooterStyle.social}>
+
+              <FaFacebook />
+
+              <FaInstagram />
+
+              <FaTwitter />
+
+            </div>
+
 
           </div>
+
 
 
         </div>
@@ -65,16 +133,17 @@ export default function Footer() {
         <hr />
 
 
-        <div className="text-center">
-          <p className="mb-0">
-            © 2026 My Website. All Rights Reserved.
-          </p>
-        </div>
+        <p className="text-center mb-0">
+
+          © 2026 Recipe App. All Rights Reserved.
+
+        </p>
 
 
       </div>
+
+
     </footer>
 
-
-  )
+  );
 }

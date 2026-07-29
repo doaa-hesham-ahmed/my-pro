@@ -1,0 +1,94 @@
+.loginCard {
+
+  background-color: white !important;
+  color: black !important;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+
+}
+
+
+.loginCard h2 {
+
+  color: #198754;
+  font-weight: bold;
+
+}
+
+.loginCard label {
+
+  color: black;
+  font-weight: 600;
+
+}
+
+.loginCard input {
+
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid #198754 !important;
+  border-radius: 10px;
+  padding: 12px;
+  transition: .3s;
+
+}
+.loginCard input::placeholder {
+
+  color: #777;
+
+}
+
+.loginCard input{
+    background-color: #777;
+}
+.loginCard input:hover {
+
+  border-color: #146c43 !important;
+
+}
+.loginCard input:focus {
+
+  border-color: #198754 !important;
+  box-shadow: 0 0 8px rgba(25,135,84,.4) !important;
+
+}
+
+.loginCard button {
+
+  border-radius: 25px;
+  padding: 12px;
+  font-weight: bold;
+
+}
+.loginCard .form-check-label {
+
+  color: black;
+
+}
+
+:global(body.dark-mode) .loginCard {
+
+  background-color: white !important;
+
+  color: black !important;
+
+}
+
+
+
+:global(body.dark-mode) .loginCard input {
+
+  background-color: white !important;
+
+  color: black !important;
+
+}
+
+
+
+:global(body.dark-mode) .loginCard label {
+
+  color: black !important;
+
+}

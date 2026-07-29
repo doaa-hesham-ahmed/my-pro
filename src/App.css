@@ -5,7 +5,7 @@
 }
 
 
-.nav-link.active {
-  
-  color:cornflowerblue !important;
+.nav-link:hover {
+  font-size: 15px;
+  color:#198754 !important;
 }

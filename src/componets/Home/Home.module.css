@@ -1,3 +1,76 @@
-p{
-    color: blue; 
+.recipeCard {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 15px !important;
+  overflow: hidden;
+  transition: 0.3s ease;
+
+  --bs-card-bg: #fff !important;
+  --bs-card-color: #000 !important;
+  --bs-body-color: #000 !important;
+  --bs-border-color: transparent !important;
 }
+
+
+.recipeCard:hover {
+  transform: translateY(-8px);
+}
+
+.recipeCard img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipeCard :global(.card-body) {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.recipeCard :global(.card-title) {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+
+.recipeCard :global(.card-text) {
+  color: #777 !important;
+}
+
+:global(body.dark-mode) .recipeCard {
+  background-color: #fff !important;
+  color: #000 !important;
+
+  --bs-card-bg: #fff !important;
+  --bs-card-color: #000 !important;
+}
+
+
+:global(body.dark-mode) .recipeCard :global(.card-body) {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+
+:global(body.dark-mode) .recipeCard :global(.card-title) {
+  color: #000 !important;
+}
+
+
+:global(body.dark-mode) .recipeCard :global(.card-text) {
+  color: #777 !important;
+}
+
+
+.spinner {
+  font-size: 45px;
+  color: #198754;
+  animation: spin 1s linear infinite;
+}
+
+
+.spinnerBtn {
+  margin-right: 8px;
+  animation: spin 1s linear infinite;
+}
+
+

@@ -17,7 +17,7 @@ export default function Error() {
         The page you are looking for does not exist.
       </p>
 
-      <Link 
+      <Link
         to="/"
         className="btn btn-primary"
       >

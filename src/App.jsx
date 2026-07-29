@@ -7,7 +7,7 @@ import Navbar from './componets/Navbar/Navbar'
 import Footer from './componets/Footer/Footer'
 import Login from './componets/Login/Login'
 import Registration from './componets/Register/Register'
-
+import ContactUs from './componets/ContactUs/ContactUs';
 import Error from './componets/Error/Error';
 
 import './App.css'
@@ -36,6 +36,7 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/register" element={<Registration />} />
+        <Route path="/contact" element={<ContactUs />} />
 
          <Route path="*" element={<Error />} />
 

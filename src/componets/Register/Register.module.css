@@ -1,0 +1,70 @@
+.register-card {
+
+  background-color: white !important;
+  color: black;
+  border-radius: 20px !important;
+  overflow: hidden;
+
+}
+
+h2{
+    color: green;
+}
+.register-card input {
+
+  background-color: white !important;
+  color: black;
+  border: 2px solid green;
+  border-radius: 12px !important;
+  padding: 12px;
+  transition: 0.3s;
+
+}
+
+.register-card input::placeholder {
+
+  color: #777;
+
+}
+.register-card input:hover {
+
+  border-color: green !important;
+
+}
+
+.register-card input:focus {
+
+  border-color: green !important;
+  box-shadow: 0 0 8px rgba(0, 128, 0, 0.4);
+  outline: none;
+
+}
+.register-card label {
+
+  color:black;
+  font-weight: bold;
+
+}
+.register-card button {
+
+  border-radius: 25px !important;
+  padding: 12px;
+  font-weight: bold;
+
+}
+
+
+:global(body.dark-mode) .register-card {
+
+  background-color: white !important;
+  color: black !important;
+
+}
+
+:global(body.dark-mode) .register-card input {
+
+  background-color: white !important;
+
+  color: black !important;
+
+}

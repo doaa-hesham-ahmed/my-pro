@@ -3,9 +3,12 @@
   border-radius: 5px;
   transition: .3s;
 }
-
+h3{
+  color:#198754;
+}
 
 .nav-link.active {
   background-color: #198754;
-  color: white !important;
+   color:#198754 !important;
+  
 }
