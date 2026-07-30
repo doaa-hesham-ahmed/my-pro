@@ -1,192 +1,97 @@
 import React, { useState } from "react";
 import HomeStyle from "./Register.module.css";
+
 export default function Register() {
 
-
   const [formData, setFormData] = useState({
-
     name: "",
     email: "",
     password: "",
     confirmPassword: ""
-
   });
 
-
-
   const [errors, setErrors] = useState({});
-
-
+  const [success, setSuccess] = useState("");
 
   function handleChange(e) {
-
-    setFormData({
-
-      ...formData,
-
-      [e.target.name]: e.target.value
-
-    });
-
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setSuccess("");
   }
-
-
-
 
   function validate() {
-
     let newErrors = {};
 
-
-
     if (!formData.name.trim()) {
-
       newErrors.name = "Name is required";
-
     }
-
-
 
     if (!formData.email) {
-
       newErrors.email = "Email is required";
-
-    } 
-    else if (
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
-    ) {
-
-      newErrors.email = "Invalid email format";
-
     }
-
-
-
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+    }
 
     if (!formData.password) {
-
       newErrors.password = "Password is required";
-
-    } 
-    else if (formData.password.length < 6) {
-
-      newErrors.password = "Password must be at least 6 characters";
-
     }
-
-
-
+    else if (formData.password.length < 6) {
+      newErrors.password = "Password must be at least 6 characters";
+    }
 
     if (!formData.confirmPassword) {
-
       newErrors.confirmPassword = "Confirm password is required";
-
-    } 
-    else if (
-      formData.password !== formData.confirmPassword
-    ) {
-
+    }
+    else if (formData.password !== formData.confirmPassword) {
       newErrors.confirmPassword = "Passwords do not match";
-
     }
 
-
-
     return newErrors;
-
   }
 
-
-
-
   function handleSubmit(e) {
-
     e.preventDefault();
-
-
 
     const validationErrors = validate();
 
-
-
     if (Object.keys(validationErrors).length > 0) {
-
       setErrors(validationErrors);
-
+      setSuccess("");
       return;
-
     }
 
+    localStorage.setItem("isRegistered", true);
+    localStorage.setItem("user", JSON.stringify(formData));
 
-
-    localStorage.setItem(
-      "isRegistered",
-      true
-    );
-
-
-    localStorage.setItem(
-      "user",
-      JSON.stringify(formData)
-    );
-
-
-
-    alert("Register Successfully 🎉");
-
-
+    setSuccess("Register Successfully");
 
     setFormData({
-
-      name:"",
-      email:"",
-      password:"",
-      confirmPassword:""
-
+      name: "",
+      email: "",
+      password: "",
+      confirmPassword: ""
     });
 
-
     setErrors({});
-
-
   }
 
-
-
-
-
   return (
-
     <div>
-
       <div className="container mt-5">
-
         <div className="row justify-content-center">
-
-
           <div className="col-md-6">
 
-
             <div className={`card shadow ${HomeStyle["register-card"]}`}>
-
-
               <div className="card-body">
-
 
                 <h2 className="text-center mb-4">
                   Register
                 </h2>
 
-
-
                 <form onSubmit={handleSubmit}>
 
-
                   <div className="mb-3">
-
-                    <label className="form-label">
-                      Name
-                    </label>
+                    <label className="form-label">Name</label>
 
                     <input
                       type="text"
@@ -200,18 +105,11 @@ export default function Register() {
                     <small className="text-danger">
                       {errors.name}
                     </small>
-
                   </div>
 
 
-
-
-
                   <div className="mb-3">
-
-                    <label className="form-label">
-                      Email
-                    </label>
+                    <label className="form-label">Email</label>
 
                     <input
                       type="email"
@@ -225,18 +123,11 @@ export default function Register() {
                     <small className="text-danger">
                       {errors.email}
                     </small>
-
                   </div>
 
 
-
-
-
                   <div className="mb-3">
-
-                    <label className="form-label">
-                      Password
-                    </label>
+                    <label className="form-label">Password</label>
 
                     <input
                       type="password"
@@ -250,15 +141,10 @@ export default function Register() {
                     <small className="text-danger">
                       {errors.password}
                     </small>
-
                   </div>
 
 
-
-
-
                   <div className="mb-3">
-
                     <label className="form-label">
                       Confirm Password
                     </label>
@@ -275,43 +161,30 @@ export default function Register() {
                     <small className="text-danger">
                       {errors.confirmPassword}
                     </small>
-
                   </div>
 
 
-
-
-
-                  <button 
+                  <button
                     className="btn btn-success w-100"
                     type="submit"
                   >
-
                     Register
-
                   </button>
 
 
+                  {success && (
+                    <p className="text-success text-center mt-3">
+                      {success}
+                    </p>
+                  )}
 
                 </form>
 
-
               </div>
-
-
             </div>
-
-
           </div>
-
-
         </div>
-
-
       </div>
-
-
     </div>
-
   );
 }

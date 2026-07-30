@@ -19,7 +19,7 @@ export default function Error() {
 
       <Link
         to="/"
-        className="btn btn-primary"
+        className="btn btn-success"
       >
         Go Home
       </Link>
