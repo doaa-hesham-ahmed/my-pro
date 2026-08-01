@@ -3,12 +3,69 @@
   border-radius: 5px;
   transition: .3s;
 }
-h3{
-  color:#198754;
+.navbar-brand h3 {
+  color: #198754 !important;
 }
 
 .nav-link.active {
   background-color: #198754;
-   color:#198754 !important;
-  
+  color: white !important;
+}
+
+html.dark-mode,
+html.dark-mode body {
+  background-color: #121212;
+  color: white;
+}
+
+html.dark-mode .navbar {
+  background-color: #212529 !important;
+}
+
+html.dark-mode .nav-link {
+  color: white !important;
+}
+
+html.dark-mode .navbar-brand h3 {
+  color: #198754 !important;
+}
+
+html.dark-mode .card {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+html.dark-mode input {
+  background-color: #333;
+  color: white;
+}
+
+html.dark-mode input::placeholder {
+  color: #aaa;
+}
+
+@media(max-width:991px){
+
+  .search-area {
+    flex-direction: column;
+    width:100%;
+    margin-top:15px;
+    gap:10px;
+  }
+
+
+  .search-area form {
+    width:100%;
+  }
+
+
+  .search-area input {
+    width:100%;
+  }
+
+
+  .search-area button {
+    margin-left:0 !important;
+  }
+
 }
