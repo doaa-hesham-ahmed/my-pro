@@ -68,4 +68,80 @@ html.dark-mode input::placeholder {
     margin-left:0 !important;
   }
 
+}   
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode p {
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #212529 !important;
+}
+
+
+body.dark-mode .nav-link {
+  color: white !important;
+}
+
+
+body.dark-mode .navbar-toggler {
+  border-color: white;
+}
+
+body.dark-mode .navbar-brand h3 {
+  color: #198754 !important;
+}
+
+
+
+/* Cards */
+
+body.dark-mode .card {
+  background-color: #1f1f1f;
+  color: white;
+  border-color: #333;
+}
+
+
+body.dark-mode .card-title,
+body.dark-mode .card-text {
+  color: white;
+}
+
+body.dark-mode .btn-outline-secondary {
+  color: white;
+  border-color: white;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #aaa;
+}
+
+
+body.dark-mode section,
+body.dark-mode .container {
+  color: white;
+}
+
+body.dark-mode footer {
+  background-color: #212529;
+  color: white;
 }
