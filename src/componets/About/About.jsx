@@ -40,7 +40,7 @@ export default function About() {
 
 
 
-        <div className="col-md-6">
+        <div className="col-md-4">
 
           <img src={recipe.image_url} alt={recipe.title} className="img-fluid rounded"
             style={{
@@ -56,7 +56,7 @@ export default function About() {
 
         </div>
 
-        <div className="col-md-6"><h1 className="mb-3"> {recipe.title}</h1>
+        <div className="col-md-5"><h1 className="mb-3"> {recipe.title}</h1>
 
           <h5 className="mb-4"> Publisher: {recipe.publisher}</h5>
           <p> <strong>Recipe ID:</strong> {recipe.id}</p>
