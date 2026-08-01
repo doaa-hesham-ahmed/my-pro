@@ -17,11 +17,19 @@ export default function Navbar({ setSearchTerm }) {
   }
 
 
-  function toggleDarkMode() {
-    setDarkMode((prev) => !prev);
-    document.documentElement.classList.toggle("dark-mode");
-  }
+ function toggleDarkMode() {
+  setDarkMode((prev) => {
+    const newMode = !prev;
 
+    if (newMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+
+    return newMode;
+  });
+}
 
   return (
     <nav className={`navbar navbar-expand-lg ${
